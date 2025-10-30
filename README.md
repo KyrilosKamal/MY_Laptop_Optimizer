@@ -54,21 +54,21 @@ username ALL=(root) NOPASSWD: /bin/systemctl start nvidia-game-mode.service, /bi
 ```
 ---
 
-###🧪 Tested Scenarios
-✅ GPU switches correctly between Integrated and Hybrid
-✅ Battery thresholds applied if supported
-✅ Turbo/PMF disabled and persisted via systemd
-✅ Game mode activates NVIDIA GPU and applies power limits
-✅ Services auto-enabled and verified
+### 🧪 Tested Scenarios
+- GPU switches correctly between Integrated and Hybrid
+- Battery thresholds applied if supported
+- Turbo/PMF disabled and persisted via systemd
+- Game mode activates NVIDIA GPU and applies power limits
+- Services auto-enabled and verified
 ---
-###📁 Log File
+### 📁 Log File
 
 All actions are logged with timestamps to:
 ```bash
 /var/log/asus-optimizer.log
 ```
 ---
-###🛠️ Troubleshooting
+### 🛠️ Troubleshooting
 - Mouse freeze after GPU switch?
   * Try disabling autosuspend for I2C HID devices via udev rule.
 tlp``` conflict```?
@@ -84,7 +84,7 @@ journalctl -xeu nvidia-game-mode.service
 ```
 
 ---
-###📜 License
+### 📜 License
 MIT — use, modify, and share freely.
 ---
 ###🤝 Credits
